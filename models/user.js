@@ -10,6 +10,18 @@ const userSchema = new mongoose.Schema({
   },
   email: String,
   passwordHash: String,
+  posts: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Post',
+    },
+  ],
+  comments: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Comment',
+    },
+  ],
 });
 
 userSchema.set('toJSON', {

@@ -8,6 +8,7 @@ const config = require('./utils/config');
 const usersRouter = require('./controllers/users');
 const postsRouter = require('./controllers/posts');
 const loginRouter = require('./controllers/login');
+const commentsRouter = require('./controllers/comments');
 
 mongoose
   .connect(config.MONGODB_URI)
@@ -26,6 +27,7 @@ app.use(middleware.tokenExtractor);
 app.use('/api/login', loginRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/posts', postsRouter);
+app.use('/api/comments', commentsRouter);
 
 app.get('/', (req, res) => {
   res.send('API for sos.sg');
