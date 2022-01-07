@@ -14,9 +14,7 @@ postsRouter.get('/:id', async (req, res) => {
 });
 
 postsRouter.post('/', middleware.userExtractor, async (req, res) => {
-  console.log(req.body);
-  console.log(req.user);
-  res.json(req.body);
+  if (req.body.title === undefined && req.body.content) res.json(req.body);
 });
 
 module.exports = postsRouter;

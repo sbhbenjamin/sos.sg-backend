@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
     unique: true,
     minLength: 3,
   },
+  email: String,
   passwordHash: String,
 });
 
