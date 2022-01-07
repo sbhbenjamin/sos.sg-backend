@@ -1,21 +1,21 @@
 const mongoose = require('mongoose');
 
-const commentSchema = new mongoose.Schema(
-  {
-    content: String,
-    user: {
+const chatSchema = new mongoose.Schema({
+  users: [
+    {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
     },
-    post: {
+  ],
+  message: [
+    {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Post',
+      ref: 'Message',
     },
-  },
-  { timestamps: true }
-);
+  ],
+});
 
-commentSchema.set('toJSON', {
+chatSchema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString();
     delete returnedObject._id;
@@ -23,4 +23,4 @@ commentSchema.set('toJSON', {
   },
 });
 
-module.exports = mongoose.model('Comment', commentSchema);
+module.exports = mongoose.model('Chat', chatSchema);
