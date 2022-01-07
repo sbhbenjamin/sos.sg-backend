@@ -6,7 +6,7 @@ const postSchema = new mongoose.Schema(
     title: String,
     content: String,
     likes: { type: Number, default: 0 },
-    tags: [String],
+    tag: String,
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
