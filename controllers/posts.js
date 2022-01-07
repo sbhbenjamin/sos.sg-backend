@@ -15,7 +15,7 @@ postsRouter.get('/:id', async (req, res) => {
 
 postsRouter.post('/', middleware.userExtractor, async (req, res) => {
   console.log(req.body);
-  console.log(req.user.id);
+  console.log(req.user);
   res.json(req.body);
 });
 

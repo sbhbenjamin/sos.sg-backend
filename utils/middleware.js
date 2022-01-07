@@ -1,3 +1,6 @@
+const jwt = require('jsonwebtoken');
+const User = require('../models/user');
+
 const requestLogger = (req, res, next) => {
   console.log('Method:', req.method);
   console.log('Path:', req.path);
@@ -17,6 +20,7 @@ const tokenExtractor = (req, res, next) => {
 
 const userExtractor = async (req, res, next) => {
   const token = req.token;
+  console.log(token);
 
   const decodedToken = jwt.verify(token, process.env.SECRET);
   if (!token || !decodedToken.id) {
