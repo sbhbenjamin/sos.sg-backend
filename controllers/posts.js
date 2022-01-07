@@ -34,7 +34,6 @@ postsRouter.post('/', middleware.userExtractor, async (req, res) => {
   const savedPost = await post.save();
   const newPosts = user.posts.concat(savedPost._id);
   await User.findOneAndUpdate({ id: user._id }, { posts: newPosts });
-  console.log(savedPost);
 
   res.json(savedPost);
 });

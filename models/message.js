@@ -23,4 +23,4 @@ messageSchema.set('toJSON', {
   },
 });
 
-module.exports = mongoose.model('Comment', messageSchema);
+module.exports = mongoose.model('Message', messageSchema);
