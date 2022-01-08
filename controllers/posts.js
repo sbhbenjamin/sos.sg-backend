@@ -5,7 +5,7 @@ const User = require('../models/user');
 const middleware = require('../utils/middleware');
 
 postsRouter.get('/', async (req, res) => {
-  const posts = await Post.find({}).populate('comments', {
+  let posts = await Post.find({}).sort({ _id: -1 }).populate('comments', {
     content: 1,
     user: 1,
   });
@@ -80,12 +80,14 @@ postsRouter.delete('/:id', middleware.userExtractor, async (req, res) => {
 });
 
 postsRouter.get('/:id/comments', async (req, res) => {
-  const post = await Post.findById(req.params.id).populate({
-    path: 'comments',
-    populate: {
-      path: 'user',
-    },
-  });
+  const post = await Post.findById(req.params.id)
+    .populate({
+      path: 'comments',
+      populate: {
+        path: 'user',
+      },
+    })
+    .sort({ _id: -1 });
   res.json(post.comments);
 });
 
