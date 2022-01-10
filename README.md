@@ -22,15 +22,15 @@ We hope that in the future, we get to quicken the enforcement of forum regulatio
 
 ## Screenshots
 <div>
-  <img src="screenshots/home.png" height='500' width="auto" />&nbsp;
-  <img src="screenshots/post.png" height='500' width="auto" />&nbsp;
-  <img src="screenshots/create-post.png" height='500' width="auto" /><br /> 
+  <img src="screenshots/home.png" height='400' width="auto" />&nbsp;
+  <img src="screenshots/post.png" height='400' width="auto" />&nbsp;
+  <img src="screenshots/create-post.png" height='400' width="auto" /><br /> 
   <em>Home Screen, Post Screen, Create Post Screen<br /></em> <br /> 
   
-  <img src="screenshots/pre-chat.png" height='500' width="auto" />&nbsp;
-  <img src="screenshots/chat.png" height='500' width="auto" /><br /> 
+  <img src="screenshots/pre-chat.png" height='400' width="auto" />&nbsp;
+  <img src="screenshots/chat.png" height='400' width="auto" /><br /> 
   <em>Chat Screens</em><br /> <br /> 
   
-  <img src="screenshots/login.png" height='500' width="auto" /><br /> 
+  <img src="screenshots/login.png" height='400' width="auto" /><br /> 
   <em>Login Screen</em><br /> <br /> 
 </div>
