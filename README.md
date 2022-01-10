@@ -2,7 +2,7 @@
 
 Backend repository to the sos.sg mobile application. The frontend repository is available [here](https://github.com/iztanpy/sos.sg-frontend).
 
-<strong>sos.sg</strong> is a companion app for the Samaritans of Singapore's 24/7 [hotline](https://www.sos.org.sg/) which seeks to provide access to help for mental health. With the increased use of mobile phones of the newer generation, coupled with increased stress levels of the education system and the neoliberal society, the application re-envisions this help as a mobile application, to make mental health help even more accessible.
+<strong>sos.sg</strong> is envisioned as a companion app for the Samaritans of Singapore's 24/7 [hotline](https://www.sos.org.sg/) which seeks to provide access to help for mental health. With the increased use of mobile phones of the newer generation, coupled with increased stress levels of the education system and the neoliberal society, the application re-envisions this help as a mobile application, to make mental health help even more accessible.
 
 ## Functions
 
