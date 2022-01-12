@@ -4,6 +4,34 @@ Backend repository to the sos.sg mobile application. The frontend repository is 
 
 <strong>sos.sg</strong> is envisioned as a companion app for the Samaritans of Singapore's 24/7 [hotline](https://www.sos.org.sg/) which seeks to provide access to help for mental health. With the increased use of mobile phones of the newer generation, coupled with increased stress levels of the education system and the neoliberal society, the application re-envisions this help as a mobile application, to make mental health help even more accessible.
 
+## Usage
+### ES Modules 
+We use ECMAScript Modules in the backend in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
+
+### Environment Variables
+Create a .env file in then root and add the following
+```
+NODE_ENV = 'test'
+PORT = 4000
+MONGODB_URI = your mongodb uri
+TEST_MONGODB_URI = your test mongodb uri
+SECRET = 'abc123'
+```
+
+### Install Dependencies
+```
+npm install
+```
+
+### Run
+```
+# Run backend on Port 4000
+npm run dev
+```
+
+
+
+
 ## Functions
 
 The key feature of the application is the real-time chat system. It seeks to enable users to anonymously chat with a volunteer from SoS, circumventing phone call anxiety. The second feature of the application is the forum, which encourages persons afflicted with various mental issues to find a voice in a community
