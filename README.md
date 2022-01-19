@@ -14,11 +14,11 @@ The frontend of the application is built on [React Native](https://reactnative.d
 
 ## Limitations
 
-Given the short period of time we had to build the application (24 hours), we had to rush to build an Minimum Viable Product for the showcase and judging. Therefore, the coding practices adopted was unfortunately not the best. Given more time, we would polish up the application to reduce redundancy, especially to spend more time working on state management in the frontend.
+Given the short period of time we had to build the application (24 hours), we had to rush to build a Minimum Viable Product for the showcase and judging. Therefore, the coding practices adopted was unfortunately not the best. Given more time, we would polish up the application to use better abstractions, spend more time working on state management in the frontend, and include a more comprehensive error catching set up.
 
 ## Moving forward
 
-We hope that in the future, we get to quicken the enforcement of forum regulations through formal recruitments of forum moderators. Improving UI flow is also a priority as we would like to provide useful links, advice, and information within the application to improve mental health literacy in Singapore. Most importantly, however, we are looking at a potential partnership with SoS and other beneficiaries in Singapore.
+We want to polish up the application to push out a more polished version of what we have now, and then continue to seek a potential partnership with the Samaritans of Singapore.
 
 ## Usage
 ### ES Modules 
